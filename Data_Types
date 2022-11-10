@@ -1,0 +1,14 @@
+public class DataTypes {
+    public static void main(String[] args){
+
+        final int gardebook_num = 0xE7C45;
+        final long phone_number = 89220603839L;
+        final int last_two_digits = 100111;
+        final int last_four_digits = 07377;
+        
+        final int num_student = 17;
+        int resault = ((num_student - 1) % 26) + 1;
+
+        char ch = (char) (64 + resault);
+    }
+}
