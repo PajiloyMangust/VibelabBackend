@@ -1,0 +1,41 @@
+public class test {
+
+    public static void main(String[] args) {
+
+        Integer number_of_fibonacci = 11;
+        int[] fibonacci_numbers;
+        fibonacci_numbers = new int[11];
+        System.out.println("Первые " + number_of_fibonacci + " чисел ряда Фибоначчи через for:");
+        for (int iter = 0; iter < number_of_fibonacci; iter++) {
+            if (iter < 2) {
+                fibonacci_numbers[iter] = 1;
+            } else {
+                fibonacci_numbers[iter] = fibonacci_numbers[iter-1] + fibonacci_numbers[iter-2];
+            }
+            if (iter == number_of_fibonacci - 1) {
+                System.out.print(fibonacci_numbers[iter]);
+            } else {
+                System.out.print(fibonacci_numbers[iter] + ", ");
+            }
+        }
+
+        System.out.println("\n***************************************");
+
+        Integer iter = 0;
+        System.out.println("Первые " + number_of_fibonacci + " чисел ряда Фибоначчи через while:");
+        while (iter < number_of_fibonacci) {
+            if (iter < 2) {
+                fibonacci_numbers[iter] = 1;
+            } else {
+                fibonacci_numbers[iter] = fibonacci_numbers[iter-1] + fibonacci_numbers[iter-2];
+            }
+            if (iter == number_of_fibonacci - 1) {
+                System.out.print(fibonacci_numbers[iter]);
+            } else {
+                System.out.print(fibonacci_numbers[iter] + ", ");
+            }
+            iter ++;
+        }
+        System.out.println("\n***************************************");
+    }
+}
